@@ -1,8 +1,16 @@
-import Image from "next/image";
+"use client"
+import { useState } from 'react'
+import Header from '../../component/header'
 
 export default function Home() {
   return (
-  <>
-  Hello there</>
-  );
+    <>
+    <Header />
+    <div className="">
+     
+   
+    </div>
+    </>
+  )
 }
+
