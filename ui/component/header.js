@@ -18,8 +18,8 @@ const Header = () => {
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Play-edge</span>
               <img
-                className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                className="h-8 w-full scale-150"
+                src="/images/headerlogo.png"
                 alt="logo for the game"
               />
             </a>
@@ -35,7 +35,7 @@ const Header = () => {
             </button>
           </div>
      
-          <div className="hidden lg:flex lg:gap-x-12 justify-center lg:flex-1">
+          <div className="hidden lg:flex lg:gap-x-12 justify-center lg:flex-1 animate-sparkle">
             {navigation.map((item) => (
               <a key={item.name} href={item.href} className="text-md font-semibold leading-6 text-gray-200 hover:scale-105 duration-500 hover:text-red-200">
                 {item.name}
