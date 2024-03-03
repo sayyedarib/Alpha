@@ -35,9 +35,9 @@ const Header = () => {
             </button>
           </div>
      
-          <div className="hidden lg:flex lg:gap-x-12 justify-center lg:flex-1 animate-sparkle">
+          <div className="hidden lg:flex lg:gap-x-12 justify-center lg:flex-1">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-md font-semibold leading-6 text-gray-200 hover:scale-105 duration-500 hover:text-red-200">
+              <a key={item.name} href={item.href} className="text-md font-semibold leading-6 text-yellow-100 hover:scale-105 duration-500 hover:text-yellow-500">
                 {item.name}
               </a>
             ))}

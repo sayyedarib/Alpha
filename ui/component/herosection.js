@@ -2,8 +2,8 @@ import React from 'react'
 
 const Herosection = () => {
     return (
-        <div className='bg-white dark:bg-gray-800'>
-            <div className="relative isolate px-6 pt-14 lg:px-8">
+        <div className='bg-white dark:bg-gray-800 flex justify-center items-center'>
+            <div className="relative isolate px-6 pt-14 lg:px-8 flex justify-center items-center">
                 <div
                     className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
                     aria-hidden="true"
@@ -16,10 +16,10 @@ const Herosection = () => {
                         }}
                     />
                 </div>
-                <div className="mx-auto max-w-6xl py-32 sm:py-48 lg:py-56 flex justify-between">
+                <div className="mx-auto max-w-6xl py-32 sm:py-48 lg:py-56 flex justify-between items-center">
                     <div className="text-left max-w-2xl">
                         <h1 className="text-4xl font-bold tracking-tight text-yellow-100 sm:text-6xl">
-                            Welcome to Adventure Quest Gaming
+                            Welcome to Alpha Gaming
                         </h1>
                         <p className="mt-5 text-lg leading-8 text-gray-200">
                             Rules of the games are here
@@ -30,9 +30,9 @@ const Herosection = () => {
                         <div className="mt-10 flex items-center justify-center gap-x-6">
                             <a
                                 href="#"
-                                className="rounded-md bg-red-200 px-3.5 py-2.5 text-sm font-semibold shadow-sm hover:bg-yellow-100 hover:scale-125 duration-500 text-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-100"
+                                className="rounded-md bg-yellow-200 w-full text-center px-3.5 py-2.5 text-lg font-semibold shadow-sm hover:bg-yellow-500 hover:scale-105 duration-500 text-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-100"
                             >
-                                Get started
+                                Play now
                             </a>
                         </div>
                     </div>

@@ -9,8 +9,8 @@ export default function Home() {
     <>
       <Header />
       <Herosection />
-      <h1 className=" bg-white dark:bg-gray-800 text-4xl font-bold tracking-tight text-gray-800 text-center sm:text-6xl animate-sparkle capitalize">
-        Select the poses from the options below
+      <h1 className=" bg-white py-12 dark:bg-gray-800 text-4xl font-bold tracking-tight text-yellow-100 text-center sm:text-6xl">
+        SELECT POSE FOR GIVEN KEYS
       </h1>
       <Cardsection />
     </>
