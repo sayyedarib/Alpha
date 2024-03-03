@@ -7,7 +7,6 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-
 *{
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -16,7 +15,6 @@
     text-wrap: balance;
   }
 }
-
 .animate-sparkle {
   animation: sparkle 1s ease-in-out infinite alternate;
 }
