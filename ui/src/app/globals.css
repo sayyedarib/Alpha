@@ -7,10 +7,22 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-
-
+*{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+.animate-sparkle {
+  animation: sparkle 1s ease-in-out infinite alternate;
+}
+@keyframes sparkle {
+  0% {
+    text-shadow: 0 0 10px #eae4d5, 0 0 20px #2807ff, 0 0 30px #93d99c, 0 0 40px #011211;
+  }
+  100% {
+    text-shadow: 0 0 20px #d2d2d2, 0 0 30px #ffc107, 0 0 40px #07ff3d, 0 0 50px #f8fbfa, 0 0 60px #ffc107;
   }
 }
