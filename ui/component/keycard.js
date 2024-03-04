@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const keycard = ({src, alt, title}) => {
+const keycard = ({ src, alt, title }) => {
   return (
     <div>
-   <img className='w-9/12 h-9/12 pt-10'  src={src} alt={alt}/>
+      <img className="w-72 m-14" src={src} alt={alt} />
     </div>
-  )
-}
+  );
+};
 
-export default keycard
+export default keycard;
