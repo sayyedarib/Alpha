@@ -1,4 +1,5 @@
 import React from 'react'
+import axios from 'axios'
 
 const Herosection = () => {
     return (
@@ -28,12 +29,20 @@ const Herosection = () => {
                             Learn more <span aria-hidden="true">→</span>
                         </a>
                         <div className="mt-10 flex items-center justify-center gap-x-6">
-                            <a
-                                href="#"
-                                className="rounded-md bg-yellow-200 w-full text-center px-3.5 py-2.5 text-lg font-semibold shadow-sm hover:bg-yellow-500 hover:scale-105 duration-500 text-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-100"
+                            <span
+                                onClick={async (e) => {
+                                    e.preventDefault();
+                                    try {
+                                        const response = await axios.post('/run_model');
+                                        console.log(response.data);
+                                    } catch (error) {
+                                        console.error(error);
+                                    }
+                                }}
+                                className="rounded-md bg-yellow-200 w-full text-center px-3.5 py-2.5 text-lg font-semibold shadow-sm hover:bg-yellow-500 hover:scale-105 duration-500 text-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-100 cursor-pointer"
                             >
                                 Play now
-                            </a>
+                            </span>
                         </div>
                     </div>
                     <img className='w-1/3 hover:scale-105 duration-500' src='/images/hero_logo.png' alt='' />
