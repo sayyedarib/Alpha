@@ -121,10 +121,10 @@ const Cardsection = () => {
       <div>
         {data.map(({ key, src, pose }) => (
           <div key={key} className="flex flex-col">
-            <div className="flex items-center">
+            <div className="flex flex-wrap justify-center items-center">
 
             <Keycard src={src} pose={pose}/>
-            <div className="flex gap-5">
+            <div className="flex gap-5 flex-wrap justify-center items-center">
 
             {pose.map(({ title, img, desc, selected }) => (
               <div key={title} onClick={() => handleClick(key, title)}>
